@@ -1,0 +1,159 @@
+body {
+    background-color: salmon;
+}
+
+.container {
+    width: 80%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.dark {
+    padding: 15px;
+    background-color: black;
+    color: grey;
+    margin: 10px;
+}
+
+header {
+    background-color: rgba(149, 181, 199, 0.925);
+    color: rgb(23, 164, 199);
+    margin: 0px;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(18, 141, 84) 3px solid;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li {
+    display: inline-flex;
+    padding: 0 20px;
+    float: left;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header, .current {
+    color:#ebdedd;
+    font-weight: bold;
+}
+header a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+/* showcase */
+#showcase {
+    min-height: 400px;
+    background-image: inherit;
+    text-align: center;
+    color: rgb(179, 179, 219);
+}
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p {
+    font-size: 20px;
+}
+#newsletter {
+    background-color: rgb(189, 24, 79);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.301);
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float:right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"] {
+    float: right;
+    padding: 4px;
+    height: 15px;
+    width: 250px;
+    margin: 0px;
+}
+.button_1{ height: 38px;
+    float: right;
+background-color: royalblue;
+border: 0;
+padding: 0 20px;
+color: salmon;}
+#boxes {
+    margin-top: 20px;
+}
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#boxes .box img {
+    width: 100px;
+}
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+article#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+
+}
+ul#service li {
+    list-style: none;
+    padding: 20px;
+    border: #dddddd solid 1px;
+    background-color: rgb(216, 114, 165);
+    margin-bottom: 5px;
+}
+
+footer {
+padding: 20px;
+margin-top: 20px;
+color: seashell;
+background-color: silver;
+text-align: center;
+/* Media Quaries */
+@media screen {
+    
+}
+/* Media Quaries */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li, 
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
