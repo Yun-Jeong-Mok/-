@@ -5,6 +5,7 @@
 
 body{
     background-image: url("/img/이상명병신.jpg");
+    background-size: 25%;
 }
 body h1 {
     background-color: red;
