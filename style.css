@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin-top: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.game-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.705);
+    left: 0;
+    top: 0;
+    color: rgb(245, 245, 245);
+    font-size: 50px;
+}
+
+.game-text > button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background: black;
+    border: none;
+    cursor: pointer;
+}
+
+.score {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.playground > ul {
+    background: whitesmoke;
+    border: 1px solid black;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.playground > ul > li {
+    width: 100%;
+    height: 25px;
+}
+
+.playground > ul > li > ul {
+    display: flex;
+}
+
+.playground > ul > li > ul > li {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid #ccc;
+}
+
+.tree {
+    background: #67c23a;
+}
+
+.square {
+    background: tomato;
+}
+
+.bar {
+    background: salmon;
+}
+
+.Zleft {
+    background: orange;
+}
+
+.Zright {
+    background: blueviolet;
+}
+
+.Lleft {
+    background: lightskyblue;
+}
+
+.Lright {
+    background: violet;
+}
