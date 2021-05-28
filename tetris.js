@@ -1,22 +1,18 @@
-// DOM
-
 const playground = document.querySelector(".playground > ul");
 const gameText = document.querySelector(".game-text");
 const scoreDisplay = document.querySelector(".score");
 const restartButton = document.querySelector(".game-text > button");
 
-// Setting
-
 const GAME_ROWS = 20;
 const GAME_COLS = 10;
-
-
-// Variables
 
 let score = 0;
 let duration = 500;
 let downInterval;
 let tempMovingItem;
+
+
+// 블럭 모양
 
 const BLOCKS = {
     tree: [
@@ -72,7 +68,7 @@ const movingItem = {
 
 init()
 
-// Functions
+// 함수
 
 function init() {
     tempMovingItem = { ...movingItem };
@@ -199,7 +195,8 @@ function showGameoverText() {
     gameText.style.display = "flex"
 }
 
-// Event handling
+// 이벤트
+
 document.addEventListener("keydown", e => {
     switch (e.keyCode) {
         case 32:
@@ -226,5 +223,6 @@ document.addEventListener("keydown", e => {
 restartButton.addEventListener("click", () => {
     playground.innerHTML = "";
     gameText.style.display = "none"
+    scoreDisplay.innerText = 0;
     init();
 })
