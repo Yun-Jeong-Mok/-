@@ -64,6 +64,11 @@ body {
     outline: 1px solid #ccc;
 }
 
+.control {
+    text-align: center;
+    font-size: 20px;
+}
+
 .tree {
     background: #67c23a;
 }
