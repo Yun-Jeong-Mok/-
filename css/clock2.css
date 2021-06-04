@@ -1,0 +1,141 @@
+/* *,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 10px double gray;
+    position: relative;
+}
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.5rem;
+}
+
+.clock .number1 {
+    --rotation: 30deg;
+}
+
+.clcok .sec1 {
+    --rotation: 36deg;
+}
+
+.clcok .sec2 {
+    --rotation: 42deg;
+}
+
+.clcok .sec3 {
+    --rotation: 48deg;
+}
+
+.clcok .sec4 {
+    --rotation: 54deg;
+}
+
+.clock .number2 {
+    --rotation: 60deg;
+}
+
+.clock .number3 {
+    --rotation: 90deg;
+}
+
+.clock .number4 {
+    --rotation: 120deg;
+}
+
+.clock .number5 {
+    --rotation: 150deg;
+}
+
+.clock .number6 {
+    --rotation: 180deg;
+}
+
+.clock .number7 {
+    --rotation: 210deg;
+}
+
+.clock .number8 {
+    --rotation: 240deg;
+}
+
+.clock .number9 {
+    --rotation: 270deg;
+}
+
+.clock .number10 {
+    --rotation: 300deg;
+}
+
+.clock .number11 {
+    --rotation: 330deg;
+}
+
+.clock .number12 {
+    --rotation: 360deg;
+}
+
+.clock .stick {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 47.5%;
+    left: 47.5%;
+    transform: translate(-50% -50%);
+    border-radius: 50%;
+}
+
+.clock .stick.seconds {
+    width: 5px;
+    height: 45%;
+    background-color: lightgray;
+}
+
+.clock .stick.minutes {
+    width: 7px;
+    height: 35%;
+    background-color: gray;
+}
+
+.clock .stick.hour {
+    width: 10px;
+    height: 28%;
+    background-color: darkgray;
+} */
