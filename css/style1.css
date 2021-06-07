@@ -40,6 +40,18 @@ header {
     font-weight: bolder;
 }
 
+.portfolio1 {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+}
+
+.portfolio2 {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+}
+
 footer {
     color: gray;
 }
@@ -77,5 +89,17 @@ footer {
     
     .landmark {
         text-align: center;
+    }
+
+    .portfolio1 {
+        float: none;
+        text-align: center;
+        width: auto;
+    }
+
+    .portfolio2 {
+        float: none;
+        text-align: center;
+        width: auto;
     }
 }
