@@ -1,0 +1,81 @@
+header {
+    background-image: url(/img/img2.jpg);
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
+.slide {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.slide:hover {
+    color: rgb(110, 101, 161);
+}
+
+.startbootstrap {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.startbootstrap:hover {
+    color: rgb(255, 20, 0);
+}
+
+.team {
+    font-weight: bolder;
+}
+
+.language {
+    text-decoration: underline;
+}
+
+.profile {
+    font-weight: bolder;
+}
+
+footer {
+    color: gray;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.messenger {
+    text-align: left;
+    list-style: none;
+}
+
+.home {
+    text-decoration: none;
+    color: black;
+    margin-left: 130px;
+    font-weight: bold;
+}
+
+.home:hover {
+   text-decoration: underline;
+}
+@media screen and (max-width: 760px) {
+    .foot {
+        display: inline-table;
+        margin-left: 0;
+    }
+
+    .home {
+        margin-left: 10%;
+    }
+    
+    .landmark {
+        text-align: center;
+    }
+}
